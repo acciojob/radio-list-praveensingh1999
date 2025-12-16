@@ -1,8 +1,12 @@
 /*  your css code here. If applicable */
-.input {
-    accent-color: red; /* For modern browsers */
+/* Style for the even-positioned radio buttons */
+.input:nth-of-type(even) {
+    accent-color: red; /* This works in modern browsers */
 }
 
-input[type="radio"]:nth-child(even) {
-    color: red; /* For older browsers */
+/* For older browsers, you may need to set color differently */
+label:nth-child(2) input, /* Targeting the 2nd radio button */
+label:nth-child(4) input, /* Targeting the 4th radio button */
+label:nth-child(6) input { /* Targeting the 6th radio button */
+    color: red; /* This may not affect radio buttons directly but can be used for text */
 }
