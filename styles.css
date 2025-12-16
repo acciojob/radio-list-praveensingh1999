@@ -1,6 +1,6 @@
 /*  your css code here. If applicable */
 /* Style for the even-positioned radio buttons */
-.input:nth-of-type(even) {
+.input:nth-last-child(even) {
     accent-color: red; /* This works in modern browsers */
 }
 
